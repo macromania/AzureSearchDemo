@@ -77,7 +77,7 @@ class SearchResultViewController: PropertyViewController {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PropertyDetailViewCell", for: indexPath) as! PropertyDetailViewCell
         
-        cell.title.text = asset.status
+        cell.title.text = "\(indexPath.row). " + (asset.status ?? "")
         cell.details.text = asset.description
         
         if let thumbnail = asset.thumbnail, let url = URL(string: thumbnail) {
