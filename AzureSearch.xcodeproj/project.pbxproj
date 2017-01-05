@@ -1,0 +1,805 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		145C39911E1D9BE4003E3511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C39901E1D9BE4003E3511 /* AppDelegate.swift */; };
+		145C39931E1D9BE4003E3511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C39921E1D9BE4003E3511 /* ViewController.swift */; };
+		145C39961E1D9BE4003E3511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145C39941E1D9BE4003E3511 /* Main.storyboard */; };
+		145C39981E1D9BE4003E3511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 145C39971E1D9BE4003E3511 /* Assets.xcassets */; };
+		145C399B1E1D9BE4003E3511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 145C39991E1D9BE4003E3511 /* LaunchScreen.storyboard */; };
+		145C39A61E1D9BE4003E3511 /* AzureSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C39A51E1D9BE4003E3511 /* AzureSearchTests.swift */; };
+		145C39B11E1D9BE4003E3511 /* AzureSearchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C39B01E1D9BE4003E3511 /* AzureSearchUITests.swift */; };
+		145C39BF1E1D9BF6003E3511 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C39BE1E1D9BF6003E3511 /* Network.swift */; };
+		145C39C11E1DB897003E3511 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145C39C01E1DB897003E3511 /* SearchResult.swift */; };
+		14CE8BF61E1EF5EC00E7F420 /* PropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE8BF51E1EF5EC00E7F420 /* PropertyViewController.swift */; };
+		14CE8BF81E1EFC8F00E7F420 /* PropertyDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CE8BF71E1EFC8F00E7F420 /* PropertyDetailViewCell.xib */; };
+		14CE8BFA1E1EFDC600E7F420 /* PropertyDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE8BF91E1EFDC600E7F420 /* PropertyDetailViewCell.swift */; };
+		14CE8BFC1E1F040C00E7F420 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE8BFB1E1F040C00E7F420 /* SearchResultViewController.swift */; };
+		4031F50D4D3DF31B90C8A104 /* Pods_AzureSearchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB1B3B20852AA7B30BFDF4B /* Pods_AzureSearchUITests.framework */; };
+		7881C8C4A66CE54024967708 /* Pods_AzureSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D55F03C8D27D239D3C2BCAC2 /* Pods_AzureSearchTests.framework */; };
+		E54410659188FF7DD4CA3BD9 /* Pods_AzureSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A23D07209B2285EAFDBACB35 /* Pods_AzureSearch.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		145C39A21E1D9BE4003E3511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 145C39851E1D9BE4003E3511 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 145C398C1E1D9BE4003E3511;
+			remoteInfo = AzureSearch;
+		};
+		145C39AD1E1D9BE4003E3511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 145C39851E1D9BE4003E3511 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 145C398C1E1D9BE4003E3511;
+			remoteInfo = AzureSearch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		145C398D1E1D9BE4003E3511 /* AzureSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AzureSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		145C39901E1D9BE4003E3511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		145C39921E1D9BE4003E3511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		145C39951E1D9BE4003E3511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		145C39971E1D9BE4003E3511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		145C399A1E1D9BE4003E3511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		145C399C1E1D9BE4003E3511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145C39A11E1D9BE4003E3511 /* AzureSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzureSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		145C39A51E1D9BE4003E3511 /* AzureSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureSearchTests.swift; sourceTree = "<group>"; };
+		145C39A71E1D9BE4003E3511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145C39AC1E1D9BE4003E3511 /* AzureSearchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzureSearchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		145C39B01E1D9BE4003E3511 /* AzureSearchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureSearchUITests.swift; sourceTree = "<group>"; };
+		145C39B21E1D9BE4003E3511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		145C39BE1E1D9BF6003E3511 /* Network.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		145C39C01E1DB897003E3511 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		14CE8BF51E1EF5EC00E7F420 /* PropertyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyViewController.swift; sourceTree = "<group>"; };
+		14CE8BF71E1EFC8F00E7F420 /* PropertyDetailViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyDetailViewCell.xib; sourceTree = "<group>"; };
+		14CE8BF91E1EFDC600E7F420 /* PropertyDetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyDetailViewCell.swift; sourceTree = "<group>"; };
+		14CE8BFB1E1F040C00E7F420 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
+		2BB1B3B20852AA7B30BFDF4B /* Pods_AzureSearchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureSearchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D17F0B259EAC29A4BC71F4 /* Pods-AzureSearchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureSearchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureSearchUITests/Pods-AzureSearchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5A4C8EF2E2BC0DA2A7551F5B /* Pods-AzureSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureSearch/Pods-AzureSearch.release.xcconfig"; sourceTree = "<group>"; };
+		8C16090CEA33697032AE398D /* Pods-AzureSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureSearch/Pods-AzureSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		9B309027C8DFA09DB0E53338 /* Pods-AzureSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AzureSearchTests/Pods-AzureSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A23D07209B2285EAFDBACB35 /* Pods_AzureSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE842E4C737A91A5F6344B4B /* Pods-AzureSearchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureSearchUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureSearchUITests/Pods-AzureSearchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B069C280C73789DC81424EB0 /* Pods-AzureSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AzureSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AzureSearchTests/Pods-AzureSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		D55F03C8D27D239D3C2BCAC2 /* Pods_AzureSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AzureSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		145C398A1E1D9BE4003E3511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E54410659188FF7DD4CA3BD9 /* Pods_AzureSearch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145C399E1E1D9BE4003E3511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7881C8C4A66CE54024967708 /* Pods_AzureSearchTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145C39A91E1D9BE4003E3511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4031F50D4D3DF31B90C8A104 /* Pods_AzureSearchUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		145C39841E1D9BE4003E3511 = {
+			isa = PBXGroup;
+			children = (
+				145C398F1E1D9BE4003E3511 /* AzureSearch */,
+				145C39A41E1D9BE4003E3511 /* AzureSearchTests */,
+				145C39AF1E1D9BE4003E3511 /* AzureSearchUITests */,
+				145C398E1E1D9BE4003E3511 /* Products */,
+				A7E5489970E253DABF48097E /* Pods */,
+				286409FC8DEADADD8BA1BBDB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		145C398E1E1D9BE4003E3511 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				145C398D1E1D9BE4003E3511 /* AzureSearch.app */,
+				145C39A11E1D9BE4003E3511 /* AzureSearchTests.xctest */,
+				145C39AC1E1D9BE4003E3511 /* AzureSearchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		145C398F1E1D9BE4003E3511 /* AzureSearch */ = {
+			isa = PBXGroup;
+			children = (
+				145C39C71E1DBAAB003E3511 /* Screens */,
+				145C39C61E1DBAA4003E3511 /* Model */,
+				145C39C51E1DBA9C003E3511 /* Network */,
+				145C39C41E1DBA91003E3511 /* Assets */,
+				145C39C31E1DBA88003E3511 /* Base */,
+				145C39C21E1DBA75003E3511 /* Layout */,
+			);
+			path = AzureSearch;
+			sourceTree = "<group>";
+		};
+		145C39A41E1D9BE4003E3511 /* AzureSearchTests */ = {
+			isa = PBXGroup;
+			children = (
+				145C39A51E1D9BE4003E3511 /* AzureSearchTests.swift */,
+				145C39A71E1D9BE4003E3511 /* Info.plist */,
+			);
+			path = AzureSearchTests;
+			sourceTree = "<group>";
+		};
+		145C39AF1E1D9BE4003E3511 /* AzureSearchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				145C39B01E1D9BE4003E3511 /* AzureSearchUITests.swift */,
+				145C39B21E1D9BE4003E3511 /* Info.plist */,
+			);
+			path = AzureSearchUITests;
+			sourceTree = "<group>";
+		};
+		145C39C21E1DBA75003E3511 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				145C39941E1D9BE4003E3511 /* Main.storyboard */,
+				145C39991E1D9BE4003E3511 /* LaunchScreen.storyboard */,
+				14CE8BF71E1EFC8F00E7F420 /* PropertyDetailViewCell.xib */,
+				14CE8BF91E1EFDC600E7F420 /* PropertyDetailViewCell.swift */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		145C39C31E1DBA88003E3511 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				145C39901E1D9BE4003E3511 /* AppDelegate.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		145C39C41E1DBA91003E3511 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				145C399C1E1D9BE4003E3511 /* Info.plist */,
+				145C39971E1D9BE4003E3511 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		145C39C51E1DBA9C003E3511 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				145C39BE1E1D9BF6003E3511 /* Network.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		145C39C61E1DBAA4003E3511 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				145C39C01E1DB897003E3511 /* SearchResult.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		145C39C71E1DBAAB003E3511 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				145C39921E1D9BE4003E3511 /* ViewController.swift */,
+				14CE8BF51E1EF5EC00E7F420 /* PropertyViewController.swift */,
+				14CE8BFB1E1F040C00E7F420 /* SearchResultViewController.swift */,
+			);
+			name = Screens;
+			sourceTree = "<group>";
+		};
+		286409FC8DEADADD8BA1BBDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A23D07209B2285EAFDBACB35 /* Pods_AzureSearch.framework */,
+				D55F03C8D27D239D3C2BCAC2 /* Pods_AzureSearchTests.framework */,
+				2BB1B3B20852AA7B30BFDF4B /* Pods_AzureSearchUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7E5489970E253DABF48097E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C16090CEA33697032AE398D /* Pods-AzureSearch.debug.xcconfig */,
+				5A4C8EF2E2BC0DA2A7551F5B /* Pods-AzureSearch.release.xcconfig */,
+				9B309027C8DFA09DB0E53338 /* Pods-AzureSearchTests.debug.xcconfig */,
+				B069C280C73789DC81424EB0 /* Pods-AzureSearchTests.release.xcconfig */,
+				54D17F0B259EAC29A4BC71F4 /* Pods-AzureSearchUITests.debug.xcconfig */,
+				AE842E4C737A91A5F6344B4B /* Pods-AzureSearchUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		145C398C1E1D9BE4003E3511 /* AzureSearch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145C39B51E1D9BE4003E3511 /* Build configuration list for PBXNativeTarget "AzureSearch" */;
+			buildPhases = (
+				23AA281646EA207C9422F167 /* [CP] Check Pods Manifest.lock */,
+				145C39891E1D9BE4003E3511 /* Sources */,
+				145C398A1E1D9BE4003E3511 /* Frameworks */,
+				145C398B1E1D9BE4003E3511 /* Resources */,
+				25F8662C07B8E38354F67AE4 /* [CP] Embed Pods Frameworks */,
+				B335BA4226B83E0489F6EEB5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AzureSearch;
+			productName = AzureSearch;
+			productReference = 145C398D1E1D9BE4003E3511 /* AzureSearch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		145C39A01E1D9BE4003E3511 /* AzureSearchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145C39B81E1D9BE4003E3511 /* Build configuration list for PBXNativeTarget "AzureSearchTests" */;
+			buildPhases = (
+				DE2E63A80F218A29992B5CCC /* [CP] Check Pods Manifest.lock */,
+				145C399D1E1D9BE4003E3511 /* Sources */,
+				145C399E1E1D9BE4003E3511 /* Frameworks */,
+				145C399F1E1D9BE4003E3511 /* Resources */,
+				6061AB00C76C406F64DB9081 /* [CP] Embed Pods Frameworks */,
+				228044C0CB9D443F5C05926E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				145C39A31E1D9BE4003E3511 /* PBXTargetDependency */,
+			);
+			name = AzureSearchTests;
+			productName = AzureSearchTests;
+			productReference = 145C39A11E1D9BE4003E3511 /* AzureSearchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		145C39AB1E1D9BE4003E3511 /* AzureSearchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 145C39BB1E1D9BE4003E3511 /* Build configuration list for PBXNativeTarget "AzureSearchUITests" */;
+			buildPhases = (
+				714CE7A8CFC66241A81C0435 /* [CP] Check Pods Manifest.lock */,
+				145C39A81E1D9BE4003E3511 /* Sources */,
+				145C39A91E1D9BE4003E3511 /* Frameworks */,
+				145C39AA1E1D9BE4003E3511 /* Resources */,
+				6AEBF6C389224AEE50DB5FB8 /* [CP] Embed Pods Frameworks */,
+				F8FE16F9CAF3168452A5EDE2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				145C39AE1E1D9BE4003E3511 /* PBXTargetDependency */,
+			);
+			name = AzureSearchUITests;
+			productName = AzureSearchUITests;
+			productReference = 145C39AC1E1D9BE4003E3511 /* AzureSearchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		145C39851E1D9BE4003E3511 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Canga IT Solutions";
+				TargetAttributes = {
+					145C398C1E1D9BE4003E3511 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DK34MVSU63;
+						ProvisioningStyle = Automatic;
+					};
+					145C39A01E1D9BE4003E3511 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DK34MVSU63;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 145C398C1E1D9BE4003E3511;
+					};
+					145C39AB1E1D9BE4003E3511 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = DK34MVSU63;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 145C398C1E1D9BE4003E3511;
+					};
+				};
+			};
+			buildConfigurationList = 145C39881E1D9BE4003E3511 /* Build configuration list for PBXProject "AzureSearch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 145C39841E1D9BE4003E3511;
+			productRefGroup = 145C398E1E1D9BE4003E3511 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				145C398C1E1D9BE4003E3511 /* AzureSearch */,
+				145C39A01E1D9BE4003E3511 /* AzureSearchTests */,
+				145C39AB1E1D9BE4003E3511 /* AzureSearchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		145C398B1E1D9BE4003E3511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145C399B1E1D9BE4003E3511 /* LaunchScreen.storyboard in Resources */,
+				145C39981E1D9BE4003E3511 /* Assets.xcassets in Resources */,
+				14CE8BF81E1EFC8F00E7F420 /* PropertyDetailViewCell.xib in Resources */,
+				145C39961E1D9BE4003E3511 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145C399F1E1D9BE4003E3511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145C39AA1E1D9BE4003E3511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		228044C0CB9D443F5C05926E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureSearchTests/Pods-AzureSearchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23AA281646EA207C9422F167 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		25F8662C07B8E38354F67AE4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureSearch/Pods-AzureSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6061AB00C76C406F64DB9081 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureSearchTests/Pods-AzureSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AEBF6C389224AEE50DB5FB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureSearchUITests/Pods-AzureSearchUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		714CE7A8CFC66241A81C0435 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B335BA4226B83E0489F6EEB5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureSearch/Pods-AzureSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE2E63A80F218A29992B5CCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F8FE16F9CAF3168452A5EDE2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AzureSearchUITests/Pods-AzureSearchUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		145C39891E1D9BE4003E3511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145C39931E1D9BE4003E3511 /* ViewController.swift in Sources */,
+				14CE8BFC1E1F040C00E7F420 /* SearchResultViewController.swift in Sources */,
+				14CE8BF61E1EF5EC00E7F420 /* PropertyViewController.swift in Sources */,
+				145C39911E1D9BE4003E3511 /* AppDelegate.swift in Sources */,
+				145C39C11E1DB897003E3511 /* SearchResult.swift in Sources */,
+				14CE8BFA1E1EFDC600E7F420 /* PropertyDetailViewCell.swift in Sources */,
+				145C39BF1E1D9BF6003E3511 /* Network.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145C399D1E1D9BE4003E3511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145C39A61E1D9BE4003E3511 /* AzureSearchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		145C39A81E1D9BE4003E3511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				145C39B11E1D9BE4003E3511 /* AzureSearchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		145C39A31E1D9BE4003E3511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 145C398C1E1D9BE4003E3511 /* AzureSearch */;
+			targetProxy = 145C39A21E1D9BE4003E3511 /* PBXContainerItemProxy */;
+		};
+		145C39AE1E1D9BE4003E3511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 145C398C1E1D9BE4003E3511 /* AzureSearch */;
+			targetProxy = 145C39AD1E1D9BE4003E3511 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		145C39941E1D9BE4003E3511 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145C39951E1D9BE4003E3511 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		145C39991E1D9BE4003E3511 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				145C399A1E1D9BE4003E3511 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		145C39B31E1D9BE4003E3511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		145C39B41E1D9BE4003E3511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		145C39B61E1D9BE4003E3511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C16090CEA33697032AE398D /* Pods-AzureSearch.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DK34MVSU63;
+				INFOPLIST_FILE = AzureSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poqstudio.AzureSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		145C39B71E1D9BE4003E3511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A4C8EF2E2BC0DA2A7551F5B /* Pods-AzureSearch.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DK34MVSU63;
+				INFOPLIST_FILE = AzureSearch/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poqstudio.AzureSearch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		145C39B91E1D9BE4003E3511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B309027C8DFA09DB0E53338 /* Pods-AzureSearchTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DK34MVSU63;
+				INFOPLIST_FILE = AzureSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poqstudio.AzureSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AzureSearch.app/AzureSearch";
+			};
+			name = Debug;
+		};
+		145C39BA1E1D9BE4003E3511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B069C280C73789DC81424EB0 /* Pods-AzureSearchTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = DK34MVSU63;
+				INFOPLIST_FILE = AzureSearchTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poqstudio.AzureSearchTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AzureSearch.app/AzureSearch";
+			};
+			name = Release;
+		};
+		145C39BC1E1D9BE4003E3511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54D17F0B259EAC29A4BC71F4 /* Pods-AzureSearchUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DK34MVSU63;
+				INFOPLIST_FILE = AzureSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poqstudio.AzureSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AzureSearch;
+			};
+			name = Debug;
+		};
+		145C39BD1E1D9BE4003E3511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE842E4C737A91A5F6344B4B /* Pods-AzureSearchUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = DK34MVSU63;
+				INFOPLIST_FILE = AzureSearchUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.poqstudio.AzureSearchUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AzureSearch;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		145C39881E1D9BE4003E3511 /* Build configuration list for PBXProject "AzureSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145C39B31E1D9BE4003E3511 /* Debug */,
+				145C39B41E1D9BE4003E3511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		145C39B51E1D9BE4003E3511 /* Build configuration list for PBXNativeTarget "AzureSearch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145C39B61E1D9BE4003E3511 /* Debug */,
+				145C39B71E1D9BE4003E3511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		145C39B81E1D9BE4003E3511 /* Build configuration list for PBXNativeTarget "AzureSearchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145C39B91E1D9BE4003E3511 /* Debug */,
+				145C39BA1E1D9BE4003E3511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		145C39BB1E1D9BE4003E3511 /* Build configuration list for PBXNativeTarget "AzureSearchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				145C39BC1E1D9BE4003E3511 /* Debug */,
+				145C39BD1E1D9BE4003E3511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 145C39851E1D9BE4003E3511 /* Project object */;
+}

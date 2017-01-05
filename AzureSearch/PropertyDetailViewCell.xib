@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PropertyDetailViewCell" rowHeight="194" id="iCd-7F-et9" customClass="PropertyDetailViewCell" customModule="AzureSearch" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="194"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iCd-7F-et9" id="7wa-Se-EAW">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="193.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gky-L8-fvH">
+                        <rect key="frame" x="155" y="8" width="238" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="u1o-eS-FxG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrR-x8-qjd">
+                        <rect key="frame" x="155.5" y="38" width="237.5" height="137.5"/>
+                        <string key="text">Label Label Label Label Label Labela Label Label Label Label Label Labela Label Label Label Label Label Labela Label Label Label Label Label Labela</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="I1R-rI-T8T">
+                        <rect key="frame" x="0.0" y="0.0" width="140" height="193.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="140" id="vDa-Ml-CRk"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VrR-x8-qjd" firstAttribute="top" secondItem="gky-L8-fvH" secondAttribute="bottom" constant="10" id="5ck-S9-v6H"/>
+                    <constraint firstItem="gky-L8-fvH" firstAttribute="top" secondItem="7wa-Se-EAW" secondAttribute="topMargin" id="7G8-S4-97h"/>
+                    <constraint firstItem="gky-L8-fvH" firstAttribute="trailing" secondItem="7wa-Se-EAW" secondAttribute="trailingMargin" id="9ME-AX-xM9"/>
+                    <constraint firstItem="I1R-rI-T8T" firstAttribute="top" secondItem="7wa-Se-EAW" secondAttribute="top" id="BZL-GL-AXu"/>
+                    <constraint firstItem="VrR-x8-qjd" firstAttribute="trailing" secondItem="7wa-Se-EAW" secondAttribute="trailingMargin" id="Gb2-NA-ycU"/>
+                    <constraint firstItem="I1R-rI-T8T" firstAttribute="leading" secondItem="7wa-Se-EAW" secondAttribute="leading" id="GjM-C7-gi1"/>
+                    <constraint firstItem="VrR-x8-qjd" firstAttribute="leading" secondItem="I1R-rI-T8T" secondAttribute="trailing" constant="15.5" id="L3G-nL-W0o"/>
+                    <constraint firstItem="I1R-rI-T8T" firstAttribute="leading" secondItem="7wa-Se-EAW" secondAttribute="leading" id="bw9-V7-PZ7"/>
+                    <constraint firstItem="gky-L8-fvH" firstAttribute="leading" secondItem="I1R-rI-T8T" secondAttribute="trailing" constant="15" id="gdr-AC-X30"/>
+                    <constraint firstAttribute="bottom" secondItem="I1R-rI-T8T" secondAttribute="bottom" id="kCd-NI-VJ7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="VrR-x8-qjd" secondAttribute="bottom" priority="750" constant="10" id="qdO-qN-JBm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="details" destination="VrR-x8-qjd" id="wFF-ap-eZT"/>
+                <outlet property="thumbnail" destination="I1R-rI-T8T" id="Aju-Hj-934"/>
+                <outlet property="title" destination="gky-L8-fvH" id="Ris-KV-QoS"/>
+            </connections>
+            <point key="canvasLocation" x="-253.5" y="27"/>
+        </tableViewCell>
+    </objects>
+</document>
