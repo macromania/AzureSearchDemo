@@ -40,6 +40,7 @@ class SearchResultViewController: PropertyViewController {
                 self.navigationItem.title = keywordValidated + " - \(count) results"
             }
             
+            print(searchResult?.next)
         }
     }
     
@@ -90,4 +91,29 @@ class SearchResultViewController: PropertyViewController {
         return cell
     }
 
+    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        
+        guard let next = searchResult?.next, let assetCount = searchResult?.assets?.count, let count = searchResult?.count  else {
+            
+            return
+        }
+        
+        if count > assetCount {
+            
+            if indexPath.row == assetCount - 1 {
+                
+                Network().fetch(next: next, result: { (searchResult: SearchResult?) in
+                    
+                    guard let assets = searchResult?.assets else {
+                        
+                        return
+                    }
+                    
+                    self.searchResult?.assets?.append(contentsOf: assets)
+                    self.searchResult?.next = searchResult?.next
+                    self.tableView?.reloadData()
+                })
+            }
+        }
+    }
 }

@@ -140,6 +140,29 @@ class Network {
                 }
         }
     }
+    
+    func fetch(next: String, result: @escaping (_ searchResult: SearchResult?) -> Void) {
+        
+        
+        Alamofire.request(next, headers: headers)
+            .validate(statusCode: 200..<300)
+            .responseJSON { response in
+                
+                print(response.request)
+                
+                switch response.result {
+                    
+                case .success(let value):
+                    let searchResult = Mapper<SearchResult>().map(JSONObject: value)
+                    result(searchResult)
+                    print("Search result for suggestions: \(searchResult?.assets?.count)")
+                    
+                case .failure(let error):
+                    print(error.localizedDescription)
+                    
+                }
+        }
+    }
 }
 
 
